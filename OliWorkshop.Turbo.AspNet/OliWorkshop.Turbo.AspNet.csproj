@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary1\OliWorkshop.Turbo.Data.csproj" />
+    <ProjectReference Include="..\OliWorkshop.Turbo.Data\OliWorkshop.Turbo.Data.csproj" />
   </ItemGroup>
 
 </Project>

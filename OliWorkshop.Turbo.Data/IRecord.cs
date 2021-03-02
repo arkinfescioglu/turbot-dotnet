@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace OliWorkshop.Turbo.Data
@@ -9,14 +10,10 @@ namespace OliWorkshop.Turbo.Data
     {
         public TEntity Entry { get; }
 
-        public Task SaveAsync();
-
-        public void Load(Func<TEntity, object> loader);
-
         public void Emit(string emmit);
 
-        public void Detach();
+        public Task SaveAsync(CancellationToken cancellation = default);
 
-        public Task RemoveAsync();
+        public Task RemoveAsync(CancellationToken cancellation = default);
     }
 }

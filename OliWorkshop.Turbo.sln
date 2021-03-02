@@ -3,13 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OliWorkshop.Turbo.Data", "ClassLibrary1\OliWorkshop.Turbo.Data.csproj", "{6F1BC080-3938-43DD-965C-1B1E2E091F38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OliWorkshop.Turbo.Data", "OliWorkshop.Turbo.Data\OliWorkshop.Turbo.Data.csproj", "{6F1BC080-3938-43DD-965C-1B1E2E091F38}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OliWorkshop.Turbo.AspNet", "OliWorkshop.Turbo.AspNet\OliWorkshop.Turbo.AspNet.csproj", "{11D8050B-0F16-4CBC-A8D6-08A8F1973085}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OliWorkshop.Turbo.AspNet", "OliWorkshop.Turbo.AspNet\OliWorkshop.Turbo.AspNet.csproj", "{11D8050B-0F16-4CBC-A8D6-08A8F1973085}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OliWorkshop.Turbo.SqlKit", "OliWorkshop.Turbo.SqlKit\OliWorkshop.Turbo.SqlKit.csproj", "{250344AF-7F62-49BE-A9C3-63555BA05C88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OliWorkshop.Turbo.SqlKit", "OliWorkshop.Turbo.SqlKit\OliWorkshop.Turbo.SqlKit.csproj", "{250344AF-7F62-49BE-A9C3-63555BA05C88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OliWorkshop.Turbo.Test", "OliWorkshop.Turbo.Test\OliWorkshop.Turbo.Test.csproj", "{DDD4DE00-8572-4F5C-9A8E-4C74B21952A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OliWorkshop.Turbo.Test", "OliWorkshop.Turbo.Test\OliWorkshop.Turbo.Test.csproj", "{DDD4DE00-8572-4F5C-9A8E-4C74B21952A6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OliWorkshop.Turbo.Queue", "OliWorkshop.Turbo.Queue\OliWorkshop.Turbo.Queue.csproj", "{80FDAD61-4F2A-45C6-878E-116DD11F80B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OliWorkshop.Turbo.PlugCode", "OliWorkshop.Turbo.PlugCode\OliWorkshop.Turbo.PlugCode.csproj", "{EF223BB5-6C55-4909-9E46-71EBFEF064AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OliWorkshop.Turbo.Linq", "OliWorkshop.Turbo.Abstractions\OliWorkshop.Turbo.Linq.csproj", "{FEE90365-241D-4D1A-B4B5-E6A17C8FE3C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +39,18 @@ Global
 		{DDD4DE00-8572-4F5C-9A8E-4C74B21952A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DDD4DE00-8572-4F5C-9A8E-4C74B21952A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DDD4DE00-8572-4F5C-9A8E-4C74B21952A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80FDAD61-4F2A-45C6-878E-116DD11F80B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80FDAD61-4F2A-45C6-878E-116DD11F80B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80FDAD61-4F2A-45C6-878E-116DD11F80B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80FDAD61-4F2A-45C6-878E-116DD11F80B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF223BB5-6C55-4909-9E46-71EBFEF064AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF223BB5-6C55-4909-9E46-71EBFEF064AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF223BB5-6C55-4909-9E46-71EBFEF064AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF223BB5-6C55-4909-9E46-71EBFEF064AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEE90365-241D-4D1A-B4B5-E6A17C8FE3C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEE90365-241D-4D1A-B4B5-E6A17C8FE3C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEE90365-241D-4D1A-B4B5-E6A17C8FE3C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEE90365-241D-4D1A-B4B5-E6A17C8FE3C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -203,6 +203,29 @@ namespace OliWorkshop.Turbo.Data
             throw new InvalidCastException();
         }
 
+        /// <summary>
+        /// Find one record by id and return a record instance with entity binding
+        /// </summary>
+        /// <typeparam name="TId"></typeparam>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public Task<IRecord<TargetEntity>> FindAsRecord<TId>(TId id)
+        {
+            return FindOne(id)
+                .ContinueWith(later => {
+                return (IRecord<TargetEntity>)new EfRecord<TargetEntity>(Context, later.Result);
+            });
+        }
+
+        /// <summary>
+        /// Create a record by entity instance without save
+        /// </summary>
+        /// <param name="entity"></param>
+        /// <returns></returns>
+        public IRecord<TargetEntity> CreateCrecord(TargetEntity entity)
+        {
+            throw new NotImplementedException();
+        }
 
         /// <summary>
         /// Find one result and execute callback to update changes
@@ -263,6 +286,11 @@ namespace OliWorkshop.Turbo.Data
         /// <param name="entity"></param>
         /// <returns></returns>
         public bool Validate(TargetEntity entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<TargetEntity> FindBy(params object[] fieldsValue)
         {
             throw new NotImplementedException();
         }

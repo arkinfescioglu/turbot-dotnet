@@ -11,10 +11,10 @@ namespace PremiumTesh.TwitterNotifier.Support
     /// </summary>
     /// <typeparam name="TEntity"></typeparam>
     [ApiController]
-    public class GenericController<TEntity, TId> : ControllerBase
+    public class FromDatabaseAttribute<TEntity, TId> : ControllerBase
         where TEntity : class, IBaseEntity<TId>
     {
-        public GenericController(IRepository<TEntity> repository)
+        public FromDatabaseAttribute(IRepository<TEntity> repository)
         {
             Repository = repository;
         }
